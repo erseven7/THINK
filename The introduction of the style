@@ -1,0 +1,11 @@
+1.若母文件在根目录下，则应这样写：
+  <script type="text/javascript" src="JS/login.js"></script>
+  这个时候下面的两种写法是不正确的：
+  <script type="text/javascript" src="/JS/login.js"></script>
+  <script type="text/javascript" src="../JS/login.js"></script>
+2.若母文件在根目录下的一个叫login的文件夹下，则应这样写：
+  <script type="text/javascript" src="../JS/login.js"></script>
+  这个时候下面的两种写法是不正确的：
+  <script type="text/javascript" src="/JS/login.js"></script>
+  <script type="text/javascript" src="JS/login.js"></script>
+同样对CSS文件的引用也是这样的。
